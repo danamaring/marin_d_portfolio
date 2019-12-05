@@ -60,7 +60,7 @@
 
     <div>
       {{!-- Skills - Design --}}
-      <div></div>
+      <div class="gray-deco"></div>
       <h1 class="skill-title">DESIGN</h1>
       <div id="design-logos">
         <img src="images/logo-ae.png" alt="AE Logo">
@@ -73,7 +73,7 @@
 
     <div>
       {{!-- Skills - Code --}}
-      <div></div>
+      <div class="gray-deco"></div>
       <h1 class="skill-title">CODE</h1>
       <div id="code-logos">
         <img src="images/logo-html.png" alt="HTML Logo">
@@ -86,7 +86,7 @@
 
     <div>
       {{!-- Skills - Other --}}
-      <div></div>
+      <div class="gray-deco"></div>
       <h1 class="skill-title">OTHER</h1>
       <div id="other-logos">
         <img src="images/logo-docker.png" alt="Docker Logo">
@@ -107,51 +107,59 @@
 
     <div id="proj-container">
       {{!-- TRAA --}}
-       
-        <img id="traa" src="images/thumbnail-traa.png" alt="TRAA Project">
-        <h2>TRAA</h2>
-        <div class="deco-line-title deco-margin"></div>
+       <div>
+          <img id="traa" src="images/thumbnail-traa.png" alt="TRAA Project">
+          <h2>TRAA</h2>
+          <div class="deco-line-title deco-margin"></div>
+       </div>
+        
       
 
       {{!-- Couples Resort --}}
-     
-        <img id="resort" src="images/thumbnail-resort.png" alt="Couples Resort Project">
-        <h2>Couples Resort</h2>
-        <div class="deco-line-title deco-margin"></div>
+        <div>
+          <img id="resort" src="images/thumbnail-resort.png" alt="Couples Resort Project">
+          <h2>Couples Resort</h2>
+          <div class="deco-line-title deco-margin"></div>
+        </div>
+        
       
 
       {{!-- Favourite Places --}}
-      
-        <img id="favourite" src="images/thumbnail-favourite.png" alt="Favourite Places Project">
-        <h2>Favourite Places</h2>
-        <div class="deco-line-title deco-margin"></div>
+        <div>
+          <img id="favourite" src="images/thumbnail-favourite.png" alt="Favourite Places Project">
+          <h2>Favourite Places</h2>
+          <div class="deco-line-title deco-margin"></div>
+        </div>
+        
      
 
       {{!-- Specialized Mixtape --}}
-      
-        <img id="mixtape" src="images/thumbnail-mixtape.png" alt="Specialized Mixtape Project">
-        <h2>Specialized Mixtape</h2>
-        <div class="deco-line-title deco-margin"></div>
-     
+        <div>
+          <img id="mixtape" src="images/thumbnail-mixtape.png" alt="Specialized Mixtape Project">
+          <h2>Specialized Mixtape</h2>
+          <div class="deco-line-title deco-margin"></div>
+        </div>
+        
 
       {{!-- Thermosecurity --}}
-      
-        <img id="thermosecurity" src="images/thumbnail-thermosecurity.png" alt="Thermosecurity Project">
-        <h2>Thermosecurity</h2>
-        <div class="deco-line-title deco-margin"></div>
-      
+        <div>
+          <img id="thermosecurity" src="images/thumbnail-thermosecurity.png" alt="Thermosecurity Project">
+          <h2>Thermosecurity</h2>
+          <div class="deco-line-title deco-margin"></div>
+        </div>
+        
     </div>
   </section>
 
   <section id="contact-form">
     {{!-- Contact Form --}}
     <h1 class="hidden">Contact Form</h1>
-    <div>
-      <div>
+    <div id="parent-container">
+      <div id="image-container">
         <h1 id="contact-title">Say hi!</h1>
         <img id="contact-image" src="images/contact-image.jpg" alt="Phone hanging">
       </div>
-      <div>
+      <div id="contact-form-container">
         <form action="post">
           <fieldset id="field">
             <input placeholder="Your Name" type="text">
