@@ -278,5 +278,99 @@
     padding: 0.6em 0;
 }
 
+//----------------QUERIES
+
+//media query 768px ---TABLET---
+@media screen and (min-width: 48em) {
+    #white-logo {
+        padding-top: 5%;
+    }
+
+    #hero-text {
+        font-size: 8em;
+    }
+
+    .number {
+        font-size: 15em;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .section-description {
+        font-size: 1.2em;
+        width: 45%;
+        padding-top: 10%;
+    } 
+
+    .deco-line-title {
+        width: 8.4em;
+    }
+
+    .number2 {
+        font-size: 15em;
+    }
+
+    .title2 {
+        font-size: 2em;
+    }
+
+    .section-description2 {
+        font-size: 1.2em;
+        width: 45%;
+        padding-top: 10%;
+    } 
+
+    .deco-line-title2 {
+        width: 8.4em;
+    }
+
+    .skill-title {
+        width: 4em;
+        height: 97px;
+        font-size: 5.5em;
+    }
+
+    #design-logos img {
+        width: 6em;
+    }
+
+    .horizontal-logos {
+        width: 15em !important;
+    }
+
+    #proj-container img {
+        width: 30em;
+    }
+
+    #proj-container h2 {
+        font-size: 2.5em;
+    }
+
+    #contact-title {
+        font-size: 7em;
+    }
+
+    #field input, #field-msg textarea {
+        font-size: 1.5em;
+    }
+
+    #submit-button {
+        font-size: 1.3em;
+    }
+
+    #footer-social-media img {
+        width: 3em;
+        padding: 1em;
+    }
+
+    #copyrights {
+        font-size: 1em;
+    }
+
+
+  }
+
 
 
