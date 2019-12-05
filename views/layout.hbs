@@ -11,6 +11,7 @@
 
     {{!-- FONTS links --}}
     <link rel="stylesheet" href="https://use.typekit.net/mrs6qim.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fdq3zps.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon-logo.png"/>
@@ -18,48 +19,50 @@
   <title>Dana Marin</title>
 </head>
 <body>
-  <section>
+  <section id="hero">
     {{!-- Hero Section --}}
     <h1 class="hidden">Hero Section</h1>
     <div>
-      <img src="images/logo-white.png" alt="Dana Logo">
+      <img id="white-logo" src="images/logo-white.png" alt="Dana Logo">
     </div>
-    <div>
-      <h1>Hello</h1>
-      <h1>World</h1>
+    <div id="hero-text">
+      <h1 id="hello">Hello</h1>
+      <h1 id="world">World</h1>
     </div>
   </section>
 
-  <section>
+  <section id="about">
     {{!-- About Section --}}
     <h1 class="hidden">About Me Section</h1>
-      <h1>01</h1>
-      <h3>About me</h3>
-      <div></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
+      <h1 class="number">01</h1>
+      <h3 class="title">About me</h3>
+      <div class="deco-line-title"></div>
+      <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
         ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
   </section>
 
   <section>
     {{!-- Demo Reel --}}
     <h1 class="hidden">Demo Reel Video</h1>
-    <div></div>
+    <div>
+      <video id="video" src="images/Avis_ad_morph.mp4" controls ></video>
+    </div>
   </section>
 
   <section>
     {{!-- My Skills --}}
     <h1 class="hidden">My Skills Section</h1>
-    <h1>02</h1>
-    <h3>My Skills</h3>
-    <div></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
+    <h1 class="number2">02</h1>
+    <h3 class="title2">My Skills</h3>
+    <div class="deco-line-title2"></div>
+    <p class="section-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
         ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
 
     <div>
       {{!-- Skills - Design --}}
       <div></div>
-      <h1>DESIGN</h1>
-      <div>
+      <h1 class="skill-title">DESIGN</h1>
+      <div id="design-logos">
         <img src="images/logo-ae.png" alt="AE Logo">
         <img src="images/logo-psd.png" alt="PSD Logo">
         <img src="images/logo-id.png" alt="ID Logo">
@@ -71,21 +74,21 @@
     <div>
       {{!-- Skills - Code --}}
       <div></div>
-      <h1>CODE</h1>
-      <div>
+      <h1 class="skill-title">CODE</h1>
+      <div id="code-logos">
         <img src="images/logo-html.png" alt="HTML Logo">
         <img src="images/logo-css.png" alt="CSS Logo">
         <img src="images/logo-js.png" alt="JS Logo">
-        <img src="images/logo-php.png" alt="PHP Logo">
-        <img src="images/logo-mysql.png" alt="MySql Logo">
+        <img class="horizontal-logos" src="images/logo-php.png" alt="PHP Logo">
+        <img class="horizontal-logos" src="images/logo-mysql.png" alt="MySql Logo">
       </div>
     </div>
 
     <div>
       {{!-- Skills - Other --}}
       <div></div>
-      <h1>OTHER</h1>
-      <div>
+      <h1 class="skill-title">OTHER</h1>
+      <div id="other-logos">
         <img src="images/logo-docker.png" alt="Docker Logo">
         <img src="images/logo-github.png" alt="Github Logo">
         <img src="images/logo-sass.svg" alt="Sass Logo">
@@ -96,94 +99,94 @@
   <section>
     {{!-- My Projects --}}
     <h1 class="hidden">My Projects Section</h1>
-    <h1>03</h1>
-    <h3>Projects</h3>
-    <div></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
+    <h1 class="number">03</h1>
+    <h3 class="title">Projects</h3>
+    <div class="deco-line-title"></div>
+    <p class="section-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
         ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
 
-    <div>
+    <div id="proj-container">
       {{!-- TRAA --}}
-      <div> 
-        <img src="images/thumbnail-traa.png" alt="TRAA Project">
+       
+        <img id="traa" src="images/thumbnail-traa.png" alt="TRAA Project">
         <h2>TRAA</h2>
-        <div></div>
-      </div>
+        <div class="deco-line-title deco-margin"></div>
+      
 
       {{!-- Couples Resort --}}
-      <div> 
-        <img src="images/thumbnail-resort.png" alt="Couples Resort Project">
+     
+        <img id="resort" src="images/thumbnail-resort.png" alt="Couples Resort Project">
         <h2>Couples Resort</h2>
-        <div></div>
-      </div>
+        <div class="deco-line-title deco-margin"></div>
+      
 
       {{!-- Favourite Places --}}
-      <div> 
-        <img src="images/thumbnail-favourite.png" alt="Favourite Places Project">
+      
+        <img id="favourite" src="images/thumbnail-favourite.png" alt="Favourite Places Project">
         <h2>Favourite Places</h2>
-        <div></div>
-      </div>
+        <div class="deco-line-title deco-margin"></div>
+     
 
       {{!-- Specialized Mixtape --}}
-      <div> 
-        <img src="images/thumbnail-mixtape.png" alt="Specialized Mixtape Project">
+      
+        <img id="mixtape" src="images/thumbnail-mixtape.png" alt="Specialized Mixtape Project">
         <h2>Specialized Mixtape</h2>
-        <div></div>
-      </div>
+        <div class="deco-line-title deco-margin"></div>
+     
 
       {{!-- Thermosecurity --}}
-      <div> 
-        <img src="images/thumbnail-thermosecurity.png" alt="Thermosecurity Project">
+      
+        <img id="thermosecurity" src="images/thumbnail-thermosecurity.png" alt="Thermosecurity Project">
         <h2>Thermosecurity</h2>
-        <div></div>
-      </div>
+        <div class="deco-line-title deco-margin"></div>
+      
     </div>
   </section>
 
-  <section>
+  <section id="contact-form">
     {{!-- Contact Form --}}
     <h1 class="hidden">Contact Form</h1>
     <div>
       <div>
-        <h1>Say hi!</h1>
-        <img src="images/contact-image.jpg" alt="Phone hanging">
+        <h1 id="contact-title">Say hi!</h1>
+        <img id="contact-image" src="images/contact-image.jpg" alt="Phone hanging">
       </div>
       <div>
         <form action="post">
-          <fieldset>
+          <fieldset id="field">
             <input placeholder="Your Name" type="text">
           </fieldset>
 
-          <fieldset>
+          <fieldset id="field">
             <input placeholder="Your Email" type="email">
           </fieldset>
 
-          <fieldset>
-            <textarea placeholder="Your Message" type="text">
+          <fieldset id="field-msg">
+            <textarea placeholder="Your Message" type="text"></textarea>
           </fieldset>
 
           <fieldset>
-            <button name="submit" type="submit">Ready!</button>
+            <button id="submit-button" name="submit" type="submit">Ready!</button>
           </fieldset>
         </form>
       </div>
     </div>
   </section>
 
-  <footer>
+  <footer id="footer">
     {{!-- Footer --}}
     <div>
-      <img src="images/logo-white.png" alt="Dana Logo">
+      <img id="white-logo" src="images/logo-white.png" alt="Dana Logo">
     </div>
 
-    <div>
+    <div id="footer-social-media">
       <img src="images/icon-linkedin.svg" alt="LinkedIn Icon">
       <img src="images/icon-pinterest.svg" alt="Pinterest Icon">
       <img src="images/icon-instagram.svg" alt="Instagram Icon">
       <img src="images/icon-facebook.svg" alt="Facebook Icon">
     </div>
 
-    <div>
+    <div id="copyrights">
       <h3>Copyrights © Dana Marin 2019</h3>
     </div>
   </footer>
