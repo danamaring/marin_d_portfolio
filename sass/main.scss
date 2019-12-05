@@ -279,6 +279,71 @@
     padding: 0.6em 0;
 }
 
+//LIGHTBOX
+.lightbox {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.884);
+    display: none;
+  }
+
+.show-lightbox {
+    display: block !important;
+}
+
+.close-lightbox {
+    float: right;
+    margin: 5%;
+    font-family: $text_font;
+    font-weight: 800;
+    font-size: 1em;
+    color: $dark_green;
+    cursor: pointer;
+}
+
+.lightbox img {
+    width: 60% !important;
+    height: auto;
+    margin-bottom: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lightbox-title {
+    font-family: $main_font;
+    color: $dark_green;
+    font-weight: 800;
+    margin-left: 5%;
+    font-size: 2.5em;
+}
+
+.lightbox-roll {
+    font-family: $text_font !important;
+    color: $dark_green !important;
+    font-weight: 100 !important;
+    margin-left: 5% !important;
+    font-size: 2em !important;
+    text-align: left !important;
+    margin-bottom: 3% !important;
+}
+
+.lightbox-description {
+    font-family: $text_font;
+    font-weight: 400;
+    color: $dark_green;
+    margin-left: 5%;
+    width: 60%;
+}
+
+.icon img {
+    width: 20% !important;
+    float: right;
+    margin-right: 15% !important;
+}
+
 //----------------QUERIES
 
 //media query 768px ---TABLET---
