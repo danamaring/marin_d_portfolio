@@ -224,6 +224,7 @@
     background-color: white;
     height: 3em;
     padding: 0 0 0 10px;
+    border: none;
 }
 
 #field-msg textarea {
@@ -368,9 +369,141 @@
     #copyrights {
         font-size: 1em;
     }
-
-
   }
+
+  //media query 1024px ---DESKTOP---
+@media screen and (min-width: 64em) {
+    .title, .title2 {
+        margin-left: 31%;
+    }
+
+    .deco-line-title, .deco-line-title2 {
+        margin-left: 31%;
+    }
+
+    .section-description, .section-description2 {
+        width: 39%;
+    }
+
+    .section-description, .section-description2 {
+        font-size: 1.2em;
+        width: 45%;
+        padding-top: 2%;
+        margin-left: 46%;
+    }
+
+    .gray-deco {
+        width: 100%;
+        height: 5em;
+        background-color: $light_gray;
+    }
+
+    .skill-title {
+        background-color: transparent;
+        color: $light_gray;
+        float: right;
+        margin-top: -0.35em;
+    }
+
+    #proj-container img {
+        width: 20em;
+    }
+
+    #proj-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #proj-container h2 {
+        font-size: 1.7em;
+    }
+
+    .deco-margin {
+        margin-left: 30%;
+        margin-bottom: 40%;
+    }
+
+    //contact form - desktop
+
+    #contact-title {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    #parent-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #contact-image {
+        display: block;
+        width: 47%;
+        height: auto;
+        margin-left: -5%;
+    }
+
+    #contact-form {
+        background-color: transparent;
+    }
+
+    #contact-form-container {
+        background-color: $light_gray;
+        position: absolute;
+        margin-left: 21%;
+        margin-top: 10%;
+        width: 32em;
+        height: 49em;
+    }
+
+    #contact-form-container form {
+        margin-top: 23%;
+    }
+
+    #field input {
+        height: 2em;
+    }
+
+    #field, #field-msg {
+        margin: 10% 5% 5% 5%;
+    }
+
+    #footer {
+        margin-top: 20%;
+    }
+
+    #footer-social-media {
+        margin-bottom: 10%;
+    }
+}
+
+//media query 1300px ---LARGE DESKTOP---
+@media screen and (min-width: 81.25em) {
+    #hero-text {
+        margin-top: 12%;
+        margin-left: 8%;
+    }
+
+    .section-description {
+        width: 35%;
+
+    }
+
+    .section-description, .section-description2 {
+        margin-left: 42%;
+    }
+
+    #video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+}
 
 
 
