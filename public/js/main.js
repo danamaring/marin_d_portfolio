@@ -1,22 +1,29 @@
 (() => {
     //try to get the bject and do stuff with it
     const seeMoreButtons = document.querySelectorAll('.see-more'),
-        popOver = document.querySelector('.lightbox1');
+        popOver = document.querySelector('.popover'),
+        closeButton = document.querySelector('.close-popover');
+
 
 
     function buildPopover(portfoliodata, el) {
-        popOver.querySelector(".lightbox-title").textContent = portfoliodata.Title;
-        popOver.querySelector(".lightbox-roll").textContent = portfoliodata.Roll;
-        popOver.querySelector(".lightbox-description").textContent = portfoliodata.Description;
+        popOver.querySelector(".popover-title").textContent = portfoliodata.Title;
+        popOver.querySelector(".popover-roll").textContent = portfoliodata.Roll;
+        popOver.querySelector(".popover-description").textContent = portfoliodata.Description;
+        document.getElementById("mockup").src = 'images/' + portfoliodata.Mockup;
+     
+
 
         //show the popover
-        popOver.classList.add('show-lightbox');
+        popOver.classList.add('show-popover');
         el.appendChild(popOver);
     }
+
 
     function fetchData() {
         let targetEl = this,
             url = `/portdata/${this.dataset.target}`; 
+
         
         fetch(url)
         .then (res => res.json())
@@ -29,7 +36,20 @@
         .catch((err) => console.log(err));
     }
 
+    function closePopOver() {
+        popOver.classList.remove('show-popover');
+    }
+
+    closeButton.addEventListener("click", closePopOver);
+
+
+    // popOver.querySelector('.close-popover').addEventListener('click', function() {
+    //     event.preventDefault();
+    //     popOver.classList.remove('show-popover');
+    // });
+    
     seeMoreButtons.forEach(button => button.addEventListener("click", fetchData));
+    
 })();
 
 
