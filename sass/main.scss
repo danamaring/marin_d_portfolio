@@ -96,6 +96,7 @@
     padding-bottom: 30%;
     font-size: 0.8em;
     padding-top: 14%;
+    line-height: 1.5em;
 }
 
 // DEMO REEL
@@ -154,6 +155,7 @@
     padding-bottom: 30%;
     font-size: 0.8em;
     padding-top: 14%;
+    line-height: 1.5em;
 }
 
 // MY SKILLS - SECTIONS
@@ -261,8 +263,16 @@
     padding: 10% 0 5% 0;
 }
 
-#contact-image {
-    display: none;
+#contact-p {
+    font-family: $text_font;
+    color: $dark_green;
+    font-size: 1em;
+    text-align: center;
+    width: 40%;
+    line-height: 1.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #field, #field-msg {
@@ -378,7 +388,7 @@
 
 .popover-roll {
     font-family: $text_font !important;
-    color: $dark_green !important;
+    color: $light_green !important;
     font-weight: 100 !important;
     margin-left: 5% !important;
     font-size: 2em !important;
@@ -392,14 +402,9 @@
     color: $dark_green;
     margin-left: 5%;
     width: 60%;
+    line-height: 1.3em;
 }
 
-// .icon img {
-//     width: 20% !important;
-//     float: right;
-//     margin-right: 15% !important;
-//     margin-top: -5% !important;
-// }
 
 
 //popover
@@ -418,9 +423,9 @@
   }
   
   .show-popover { 
-      display: block; 
-      margin-left: auto;
-      margin-right: auto;
+      display: block !important; 
+      margin-left: auto !important;
+      margin-right: auto !important;
 }
 
 .close-popover {
@@ -432,15 +437,17 @@
     color: $dark_green;
     cursor: pointer;
 }
+
+.popover img {
+    width: 60% !important;
+    height: auto;
+    margin-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
   
-//   .see-more { 
-//     display: block; 
-//     padding: 12px 18px; 
-//     border-radius: 8px; 
-//     color: white; 
-//     background-color: salmon; 
-//     margin-top: 8px
-//   }
 
 //----------------QUERIES
 
@@ -610,6 +617,10 @@
         margin-left: auto;
         margin-right: auto;
         color: white;
+    }
+
+    #contact-p {
+        color: $light_green;
     }
 
     #parent-container {
