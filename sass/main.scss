@@ -17,6 +17,13 @@
     margin-top: 5%;
 }
 
+#hero-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 #hero-image img {
     position: relative;
     float: right;
@@ -195,6 +202,7 @@
     background-position: center center;
     max-width: 100%;
     height: auto;
+    margin-bottom: 10%;
 }
 
 .numb3 {
@@ -332,7 +340,7 @@
 }
 
 #copyrights {
-    background-color: $dark_green !important;
+    background-color: $dark_green;
     color: white;
     font-family: $text_font;
     font-weight: 200;
@@ -447,6 +455,8 @@ p > span { display: block; padding-bottom: 12px; }
 @media screen and (min-width: 48em) {
     #white-logo {
         padding-top: 5%;
+        width: 7em;
+        margin-left: 4em;
     }
 
     #hero-text {
@@ -511,6 +521,12 @@ p > span { display: block; padding-bottom: 12px; }
         font-size: 2.5em;
     }
 
+    .skill-title h1 {
+        padding-top: 0.8em !important;
+        margin-left: -0.1em !important;
+        font-size: 0.7em;
+    }
+
     #contact-title {
         font-size: 7em;
     }
@@ -535,6 +551,20 @@ p > span { display: block; padding-bottom: 12px; }
 
   //media query 1024px ---DESKTOP---
 @media screen and (min-width: 64em) {
+    #white-logo {
+        padding-top: 0; 
+        width: 8em;
+        margin-left: 3em;
+    }
+
+    #hero-image img {
+        position: relative;
+        /* float: right; */
+        width: 57em;
+        /* margin-top: -30%; */
+        margin-top: -15%;
+    }
+
     .title, .title2 {
         margin-left: 31%;
     }
@@ -560,13 +590,6 @@ p > span { display: block; padding-bottom: 12px; }
         background-color: $light_gray;
     }
 
-    .skill-title {
-        background-color: transparent;
-        color: $light_gray;
-        float: right;
-        margin-top: -0.35em;
-    }
-
     #proj-container img {
         width: 20em;
     }
@@ -590,8 +613,10 @@ p > span { display: block; padding-bottom: 12px; }
     //contact form - desktop
 
     #contact-title {
-        text-align: left;
-        margin-left: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
     }
 
     #parent-container {
@@ -608,20 +633,27 @@ p > span { display: block; padding-bottom: 12px; }
     }
 
     #contact-form {
-        background-color: transparent;
+        background: url(../images/contact-form-bcg.gif) center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
     }
 
+
     #contact-form-container {
-        background-color: $light_gray;
-        position: absolute;
-        margin-left: 21%;
-        margin-top: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 32em;
         height: 49em;
+        margin-top: 15%;
     }
 
     #contact-form-container form {
         margin-top: 23%;
+        padding-top: 0.5em;
     }
 
     #field input {
@@ -632,13 +664,22 @@ p > span { display: block; padding-bottom: 12px; }
         margin: 10% 5% 5% 5%;
     }
 
-    #footer {
-        margin-top: 20%;
-    }
 
     #footer-social-media {
         margin-bottom: 10%;
+        margin-top: 0;
     }
+
+    #footer-logo {
+        width: 7em;
+        padding-bottom: 2em;
+    }
+
+    #copyrights {
+        background-color: white;
+        color: $dark_green;
+    }
+
 }
 
 //media query 1300px ---LARGE DESKTOP---
