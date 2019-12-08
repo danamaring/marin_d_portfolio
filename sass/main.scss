@@ -7,7 +7,50 @@
 
 //HERO SECTION
 #hero {
-    background: url(../images/hero-bcg.png) center;
+    background-color: white;
+}
+
+#white-logo {
+    width: 4em;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#hero-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#hero-image img {
+    position: relative;
+    float: right;
+    width: 76%;
+    margin-top: -30%;
+}
+
+#hero-text {
+    margin-top: 40%;
+    margin-left: 5%;
+    font-family: $main_font;
+    font-weight: 600;
+    font-style: normal;
+    color: $dark_green;
+    font-size: 3em;
+}
+
+#world {
+    color: #adadad67;
+    text-decoration: line-through;
+    padding-bottom: 15%;
+}
+
+
+//ABOUT SECTION
+#about {
+    background: url(../images/blue-bcg.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -15,41 +58,12 @@
     height: auto;
 }
 
-#white-logo {
-    width: 10em;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#hero-text {
-    margin-top: 40%;
-    margin-left: 5%;
-    font-family: $main_font;
-    font-weight: 800;
-    font-style: normal;
-    color: white;
-    font-size: 5em;
-}
-
-#world {
-    color: rgba(255, 255, 255, 0.185);
-    text-decoration: line-through;
-    padding-bottom: 50%;
-}
-
-
-//ABOUT SECTION
-#about {
-    background-color: black;
-}
-
 .number {
     margin-top: 0;
     font-family: $main_font;
     font-weight: 800;
     font-style: normal;
-    color: $dark_green;
+    color: white;
     font-size: 9em;
     padding-top: 20%;
     margin-left: 15%;
@@ -57,7 +71,7 @@
 
 .title {
     font-family: $main_font;
-    color: white;
+    color: $light_green;
     font-size: 0.5em;
     margin-top: 0;
     margin-left: 43%;
@@ -88,15 +102,26 @@
 #video {
     max-width: 100%;
     height: auto;
+    margin-top: -10%;
 }
 
 // MY SKILLS
+
+#my-skills {
+    background: url(../images/yellow-bcg.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    height: auto;
+}
+
 .number2 {
     margin-top: 0;
     font-family: $main_font;
     font-weight: 800;
     font-style: normal;
-    color: $light_green;
+    color: white;
     font-size: 9em;
     padding-top: 20%;
     margin-left: 15%;
@@ -120,7 +145,7 @@
 }
 
 .section-description2 {
-    color: $dark_green;
+    color: white;
     font-family: $text_font;
     font-weight: 500;
     font-style: normal;
@@ -132,15 +157,23 @@
 }
 
 // MY SKILLS - SECTIONS
-.skill-title {
+.skill-title h1 {
     color: white;
     font-family: $text_font;
     font-weight: 600;
     font-style: normal;
-    background-color: $light_gray;
-    width: 4em;
-    height: 62px;
-    font-size: 3.5em;
+    font-size: 3em;
+    padding-top: 1.55em;
+    margin-left: -0.1em;
+}
+
+.skill-title {
+    width: 16em;
+    height: 7em;
+    background-color: $dark_green;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #design-logos, #code-logos, #other-logos {
@@ -162,6 +195,32 @@
 }
 
 //PROJECTS SECTION
+#projects-title-container {
+    background: url(../images/gray-bcg.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.numb3 {
+    color: $dark_green !important;
+}
+
+.titl3 {
+    color: white !important;
+}
+
+.line3 {
+    background-color: white !important;
+}
+
+.text3 {
+    color: $dark_green !important;
+}
+
 #proj-container img {
     display: block;
     margin-left: auto;
@@ -183,11 +242,9 @@
     font-size: 1.5em;
     margin-top: 10px;
     text-align: center;
+    margin-bottom: 10%;
 }
 
-.deco-margin {
-    margin-bottom: 20%;
-}
 
 //CONTACT FORM
 #contact-form {
@@ -237,22 +294,25 @@
 
 #submit-button {
     width: 7em;
-    background-color: $dark_green;
+    background-color: $light_green;
     color: white;
-    font-family: $text_font;
-    font-weight: 200;
+    font-family: $main_font;
+    font-weight: 600;
     text-align: center;
-    margin-left: 5%;
     border: none;
     font-size: 1em;
     height: 2.3em;
     cursor: pointer;
-    margin-bottom: 20%;
+    margin-bottom: 9%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
 }
 
 //FOOTER
 #footer {
-    background-color: $dark_green;
+    background-color: $light_gray;
 }
 
 #footer-social-media {
@@ -264,23 +324,88 @@
 }
 
 #footer-social-media img {
-    width: 2em;
-    padding: 3%;
+    height: 1.5em;
+    padding: 0.8em;
     cursor: pointer;
+    margin-top: 2em;
+}
+
+#footer-logo {
+    width: 4em;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
 }
 
 #copyrights {
-    background-color: $light_green !important;
+    background-color: $dark_green;
     color: white;
     font-family: $text_font;
     font-weight: 200;
-    text-align: center;
+    text-align: right;
     font-size: 0.8em;
-    padding: 0.6em 0;
+    padding: 0.6em 1em 0.6em 0;
 }
 
-//LIGHTBOX
-.lightbox {
+
+// .show-lightbox {
+//     display: block !important;
+//     margin-right: auto !important;
+//     margin-left: auto !important;
+// }
+
+
+
+// .lightbox img {
+//     width: 60% !important;
+//     height: auto;
+//     margin-bottom: 10%;
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-top: 5%;
+// }
+
+.popover-title {
+    font-family: $main_font;
+    color: $dark_green;
+    font-weight: 800;
+    margin-left: 5%;
+    font-size: 2.5em;
+}
+
+.popover-roll {
+    font-family: $text_font !important;
+    color: $dark_green !important;
+    font-weight: 100 !important;
+    margin-left: 5% !important;
+    font-size: 2em !important;
+    text-align: left !important;
+    margin-bottom: 3% !important;
+}
+
+.popover-description {
+    font-family: $text_font;
+    font-weight: 400;
+    color: $dark_green;
+    margin-left: 5%;
+    width: 60%;
+}
+
+// .icon img {
+//     width: 20% !important;
+//     float: right;
+//     margin-right: 15% !important;
+//     margin-top: -5% !important;
+// }
+
+
+//popover
+// p > span { display: block; padding-bottom: 12px; }
+
+.popover { 
     width: 70%;
     height: 100vh;
     position: fixed;
@@ -291,14 +416,14 @@
     box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
     display: none;
   }
-
-.show-lightbox {
-    display: block !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
+  
+  .show-popover { 
+      display: block; 
+      margin-left: auto;
+      margin-right: auto;
 }
 
-.close-lightbox {
+.close-popover {
     float: right;
     margin: 5%;
     font-family: $text_font;
@@ -307,49 +432,15 @@
     color: $dark_green;
     cursor: pointer;
 }
-
-.lightbox img {
-    width: 60% !important;
-    height: auto;
-    margin-bottom: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-}
-
-.lightbox-title {
-    font-family: $main_font;
-    color: $dark_green;
-    font-weight: 800;
-    margin-left: 5%;
-    font-size: 2.5em;
-}
-
-.lightbox-roll {
-    font-family: $text_font !important;
-    color: $dark_green !important;
-    font-weight: 100 !important;
-    margin-left: 5% !important;
-    font-size: 2em !important;
-    text-align: left !important;
-    margin-bottom: 3% !important;
-}
-
-.lightbox-description {
-    font-family: $text_font;
-    font-weight: 400;
-    color: $dark_green;
-    margin-left: 5%;
-    width: 60%;
-}
-
-.icon img {
-    width: 20% !important;
-    float: right;
-    margin-right: 15% !important;
-    margin-top: -5% !important;
-}
+  
+//   .see-more { 
+//     display: block; 
+//     padding: 12px 18px; 
+//     border-radius: 8px; 
+//     color: white; 
+//     background-color: salmon; 
+//     margin-top: 8px
+//   }
 
 //----------------QUERIES
 
@@ -357,6 +448,8 @@
 @media screen and (min-width: 48em) {
     #white-logo {
         padding-top: 5%;
+        width: 7em;
+        margin-left: 4em;
     }
 
     #hero-text {
@@ -421,6 +514,12 @@
         font-size: 2.5em;
     }
 
+    .skill-title h1 {
+        padding-top: 0.8em !important;
+        margin-left: -0.1em !important;
+        font-size: 0.7em;
+    }
+
     #contact-title {
         font-size: 7em;
     }
@@ -445,6 +544,20 @@
 
   //media query 1024px ---DESKTOP---
 @media screen and (min-width: 64em) {
+    #white-logo {
+        padding-top: 0; 
+        width: 8em;
+        margin-left: 3em;
+    }
+
+    #hero-image img {
+        position: relative;
+        /* float: right; */
+        width: 57em;
+        /* margin-top: -30%; */
+        margin-top: -15%;
+    }
+
     .title, .title2 {
         margin-left: 31%;
     }
@@ -470,13 +583,6 @@
         background-color: $light_gray;
     }
 
-    .skill-title {
-        background-color: transparent;
-        color: $light_gray;
-        float: right;
-        margin-top: -0.35em;
-    }
-
     #proj-container img {
         width: 20em;
     }
@@ -500,8 +606,10 @@
     //contact form - desktop
 
     #contact-title {
-        text-align: left;
-        margin-left: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
     }
 
     #parent-container {
@@ -518,20 +626,27 @@
     }
 
     #contact-form {
-        background-color: transparent;
+        background: url(../images/contact-form-bcg.gif) center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: auto;
     }
 
+
     #contact-form-container {
-        background-color: $light_gray;
-        position: absolute;
-        margin-left: 21%;
-        margin-top: 10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 32em;
         height: 49em;
+        margin-top: 15%;
     }
 
     #contact-form-container form {
         margin-top: 23%;
+        padding-top: 0.5em;
     }
 
     #field input {
@@ -542,13 +657,22 @@
         margin: 10% 5% 5% 5%;
     }
 
-    #footer {
-        margin-top: 20%;
-    }
 
     #footer-social-media {
         margin-bottom: 10%;
+        margin-top: 0;
     }
+
+    #footer-logo {
+        width: 7em;
+        padding-bottom: 2em;
+    }
+
+    #copyrights {
+        background-color: white;
+        color: $dark_green;
+    }
+
 }
 
 //media query 1300px ---LARGE DESKTOP---

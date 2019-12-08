@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/fdq3zps.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon-logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
   <title>Dana Marin</title>
 </head>
@@ -23,12 +23,18 @@
     {{!-- Hero Section --}}
     <h1 class="hidden">Hero Section</h1>
     <div>
-      <img id="white-logo" src="images/logo-white.png" alt="Dana Logo">
+      <img id="white-logo" src="images/logo-dana-final-color.svg" alt="Dana Logo">
     </div>
-    <div id="hero-text">
-      <h1 id="hello">Hello</h1>
-      <h1 id="world">World</h1>
+    <div id="hero-container">
+      <div id="hero-text">
+        <h1 id="hello">Hello</h1>
+        <h1 id="world">World</h1>
+      </div>
+      <div id="hero-image">
+        <img src="images/geometric-bcg.svg" alt="Geometric Background">
+      </div>
     </div>
+    
   </section>
 
   <section id="about">
@@ -45,23 +51,27 @@
     {{!-- Demo Reel --}}
     <h1 class="hidden">Demo Reel Video</h1>
     <div>
-      <video id="video" src="images/Avis_ad_morph.mp4" controls ></video>
+      <video id="video" src="images/dana-demo-reel.mp4" controls ></video>
     </div>
   </section>
 
   <section>
     {{!-- My Skills --}}
-    <h1 class="hidden">My Skills Section</h1>
-    <h1 class="number2">02</h1>
-    <h3 class="title2">My Skills</h3>
-    <div class="deco-line-title2"></div>
-    <p class="section-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
-        ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
+    <div id="my-skills">
+      <h1 class="hidden">My Skills Section</h1>
+      <h1 class="number2">02</h1>
+      <h3 class="title2">My Skills</h3>
+      <div class="deco-line-title2"></div>
+      <p class="section-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
+          ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
+    </div>
 
     <div>
       {{!-- Skills - Design --}}
-      <div class="gray-deco"></div>
-      <h1 class="skill-title">DESIGN</h1>
+      <div class="skill-title">
+        <h1>DESIGN</h1>
+      </div>
+      
       <div id="design-logos">
         <img src="images/logo-ae.png" alt="AE Logo">
         <img src="images/logo-psd.png" alt="PSD Logo">
@@ -73,8 +83,9 @@
 
     <div>
       {{!-- Skills - Code --}}
-      <div class="gray-deco"></div>
-      <h1 class="skill-title">CODE</h1>
+      <div class="skill-title">
+        <h1>CODE</h1>
+      </div>
       <div id="code-logos">
         <img src="images/logo-html.png" alt="HTML Logo">
         <img src="images/logo-css.png" alt="CSS Logo">
@@ -86,8 +97,9 @@
 
     <div>
       {{!-- Skills - Other --}}
-      <div class="gray-deco"></div>
-      <h1 class="skill-title">OTHER</h1>
+      <div class="skill-title">
+        <h1>OTHER</h1>
+      </div>
       <div id="other-logos">
         <img src="images/logo-docker.png" alt="Docker Logo">
         <img src="images/logo-github.png" alt="Github Logo">
@@ -96,134 +108,71 @@
     </div>
   </section>
 
+
+
   <section>
     {{!-- My Projects --}}
-    <h1 class="hidden">My Projects Section</h1>
-    <h1 class="number">03</h1>
-    <h3 class="title2">Projects</h3>
-    <div class="deco-line-title"></div>
-    <p class="section-description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
-        ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
+    <div id="projects-title-container">
+      <h1 class="hidden">My Projects Section</h1>
+      <h1 class="number numb3">03</h1>
+      <h3 class="title2 titl3">Projects</h3>
+      <div class="deco-line-title line3"></div>
+      <p class="section-description2 text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis, sapiente eveniet voluptatum provident nisi quos 
+          ducimus unde alias suscipit nemo perspiciatis veniam quo tempora dolores error dolorem explicabo reprehenderit.</p>
+    </div>
+    
 
     <div id="proj-container">
       {{!-- TRAA --}}
-       <div>
+       <div class="see-more" data-target="1">
           <img id="traa" src="images/thumbnail-traa.png" alt="TRAA Project">
           <h2>TRAA</h2>
-          <div class="deco-line-title deco-margin"></div>
        </div>
-
-       <div class="lightbox-traa lightbox">
-         <h3 class="close-lightbox close-lightbox-TRAA">X</h3>
-         <img src="images/mockup-traa.png" alt="TRAA Website Mockup">
-         <h1 class="lightbox-title">Thames River Anglers Association</h1>
-         <h2 class="lightbox-roll">Roll: Web designer and front-end developer</h2>
-         <p class="lightbox-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam eos corporis aliquam quis tempora rerum provident nobis? Nam suscipit 
-           et nulla voluptate possimus distinctio doloribus, accusantium aut saepe corrupti.</p>
-          <div class="icon">
-            <img src="images/icon-logo-green.png" alt="Icon Dana">
-          </div>
-          
-       </div>
-        
+                  
 
       {{!-- Couples Resort --}}
-        <div>
+        <div class="see-more" data-target="2">
           <img id="resort" src="images/thumbnail-resort.png" alt="Couples Resort Project">
           <h2>Couples Resort</h2>
-          <div class="deco-line-title deco-margin"></div>
         </div>
-
-        <div class="lightbox-resort lightbox">
-         <h3 class="close-lightbox close-lightbox-resort">X</h3>
-         <img src="images/mockup-resort.png" alt="Couples Resort Website Mockup">
-         <h1 class="lightbox-title">Thames River Anglers Association</h1>
-         <h2 class="lightbox-roll">Roll: Web designer and front-end developer</h2>
-         <p class="lightbox-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam eos corporis aliquam quis tempora rerum provident nobis? Nam suscipit 
-           et nulla voluptate possimus distinctio doloribus, accusantium aut saepe corrupti.</p>
-          <div class="icon">
-            <img src="images/icon-logo-green.png" alt="Icon Dana">
-          </div>
-          
-       </div>
         
 
       {{!-- Favourite Places --}}
-        <div>
+        <div class="see-more" data-target="3">
           <img id="favourite" src="images/thumbnail-favourite.png" alt="Favourite Places Project">
           <h2>Favourite Places</h2>
-          <div class="deco-line-title deco-margin"></div>
         </div>
-        
-        <div class="lightbox-favourite lightbox">
-         <h3 class="close-lightbox close-lightbox-favourite">X</h3>
-         <img src="images/mockup-favourite.png" alt="Favourite Places Website Mockup">
-         <h1 class="lightbox-title">Thames River Anglers Association</h1>
-         <h2 class="lightbox-roll">Roll: Web designer and front-end developer</h2>
-         <p class="lightbox-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam eos corporis aliquam quis tempora rerum provident nobis? Nam suscipit 
-           et nulla voluptate possimus distinctio doloribus, accusantium aut saepe corrupti.</p>
-          <div class="icon">
-            <img src="images/icon-logo-green.png" alt="Icon Dana">
-          </div>
-          
-       </div>
-        
      
 
       {{!-- Specialized Mixtape --}}
-        <div>
+        <div class="see-more" data-target="4">
           <img id="mixtape" src="images/thumbnail-mixtape.png" alt="Specialized Mixtape Project">
           <h2>Specialized Mixtape</h2>
-          <div class="deco-line-title deco-margin"></div>
         </div>
-
-        <div class="lightbox-mixtape lightbox">
-         <h3 class="close-lightbox close-lightbox-mixtape">X</h3>
-         <img src="images/mockup-mixtape.png" alt="Specialized Mixtape Mockup">
-         <h1 class="lightbox-title">Thames River Anglers Association</h1>
-         <h2 class="lightbox-roll">Roll: Web designer and front-end developer</h2>
-         <p class="lightbox-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam eos corporis aliquam quis tempora rerum provident nobis? Nam suscipit 
-           et nulla voluptate possimus distinctio doloribus, accusantium aut saepe corrupti.</p>
-          <div class="icon"> 
-            <img src="images/icon-logo-green.png" alt="Icon Dana">
-          </div>
-          
-       </div>
-        
         
 
       {{!-- Thermosecurity --}}
-        <div>
+        <div class="see-more" data-target="5">
           <img id="thermosecurity" src="images/thumbnail-thermosecurity.png" alt="Thermosecurity Project">
           <h2>Thermosecurity</h2>
-          <div class="deco-line-title deco-margin"></div>
         </div>
-
-        <div class="lightbox-thermosecurity lightbox">
-         <h3 class="close-lightbox close-lightbox-thermosecurity">X</h3>
-         <img src="images/mockup-thermosecurity.png" alt="Thermosecurity Website Mockup">
-         <h1 class="lightbox-title">Thames River Anglers Association</h1>
-         <h2 class="lightbox-roll">Roll: Web designer and front-end developer</h2>
-         <p class="lightbox-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati veniam eos corporis aliquam quis tempora rerum provident nobis? Nam suscipit 
-           et nulla voluptate possimus distinctio doloribus, accusantium aut saepe corrupti.</p>
-          <div class="icon">
-            <img src="images/icon-logo-green.png" alt="Icon Dana">
-          </div>
-          
-       </div>
-        
         
     </div>
   </section>
 
+    {{!-- POPOVER --}}
+      <article class="popover">
+            <h3 class="close-popover">X</h3>
+            <img id="mockup" src="" alt="Project Mockup">
+            <h1 class="popover-title"></h1>
+            <h2 class="popover-roll"></h2>
+            <p class="popover-description"></p>
+      </article>
+
   <section id="contact-form">
     {{!-- Contact Form --}}
     <h1 class="hidden">Contact Form</h1>
-    <div id="parent-container">
-      <div id="image-container">
         <h1 id="contact-title">Say hi!</h1>
-        <img id="contact-image" src="images/contact-image.jpg" alt="Phone hanging">
-      </div>
       <div id="contact-form-container">
         <form action="post">
           <fieldset id="field">
@@ -242,16 +191,11 @@
             <button id="submit-button" name="submit" type="submit">Ready!</button>
           </fieldset>
         </form>
-      </div>
     </div>
   </section>
 
   <footer id="footer">
     {{!-- Footer --}}
-    <div>
-      <img id="white-logo" src="images/logo-white.png" alt="Dana Logo">
-    </div>
-
     <div id="footer-social-media">
       <a href="https://ca.linkedin.com/" target="_blank">
         <img src="images/icon-linkedin.svg" alt="LinkedIn Icon">
@@ -265,7 +209,10 @@
       <a href="https://www.facebook.com/danamaring" target="_blank">
         <img src="images/icon-facebook.svg" alt="Facebook Icon">
       </a>
-     
+    </div>
+
+    <div>
+      <img id="footer-logo" src="images/logo-dana-final-color.svg" alt="Dana Logo">
     </div>
 
     <div id="copyrights">
