@@ -2,12 +2,16 @@ const config = require('../config');
 const sql = require('mysql');
 
 
-const connect = sql.createConnection({
-    host: config.host,
-    password: config.password,
-    user: config.user,
-    port: config.port,
-    database: config.database
-})
+const connect = sql.createPool({
+  host: config.host,
+  port: config.port,
+  user: config.user,
+  password: config.password,
+  database: config.database,
+  connectionLimit : 20,
+  queueLimit : 100,
+  waitForConnections : true
+});
 
 module.exports = connect;
+
