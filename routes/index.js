@@ -22,7 +22,7 @@ router.get('/portdata/:target', (req, res) => {
     console.log(rows); // this should be your database query result
 
     // render our page
-    res.render('/portdata/:target', {data: rows}); // whatever page and data you're rendering
+    res.json(rows[0]) // whatever page and data you're rendering
   });
 });
 })
