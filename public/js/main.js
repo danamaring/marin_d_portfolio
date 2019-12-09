@@ -16,7 +16,7 @@
 
         //show the popover
         popOver.classList.add('show-popover');
-        el.appendChild(popOver);
+        document.body.appendChild(popOver)
     }
 
 
