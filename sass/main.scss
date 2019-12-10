@@ -181,16 +181,21 @@
 
 #design-logos, #code-logos, #other-logos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #design-logos img, #code-logos img {
     width: 5em;
     padding: 1em;
+}
+
+#design-logos img, #code-logos img, #other-logos img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #other-logos img {
@@ -577,6 +582,21 @@
         width: 4em;
         height: 97px;
         font-size: 5.5em;
+    }
+
+    #design-logos, #code-logos, #other-logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #design-logos img, #code-logos img, #other-logos img {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #design-logos img {
