@@ -7,7 +7,12 @@
 
 //HERO SECTION
 #hero {
-    background-color: white;
+    background: url(../images/geometric-bcg1.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 100%;
+    height: auto;
 }
 
 #white-logo {
@@ -15,13 +20,7 @@
     position: relative;
     margin-left: 5%;
     margin-top: 5%;
-}
-
-#hero-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    cursor: pointer;
 }
 
 #hero-image img {
@@ -196,6 +195,24 @@
     width: 8em !important;
 }
 
+
+#design-logos img:hover {
+    transform: scale(1.15);
+    transition: all 0.4s;
+}
+
+
+#code-logos img:hover {
+    transform: scale(1.15);
+    transition: all 0.4s;
+}
+
+
+#other-logos img:hover {
+    transform: scale(1.15);
+    transition: all 0.4s;
+}
+
 //PROJECTS SECTION
 #projects-title-container {
     background: url(../images/gray-bcg.jpg) center;
@@ -234,6 +251,9 @@
     width: 15em;
     height: auto;
     cursor: pointer;
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+    filter: grayscale(1);
 }
 
 #proj-container h2 {
@@ -242,10 +262,42 @@
     font-style: normal;
     color: $dark_green;
     font-size: 1.5em;
-    margin-top: 10px;
+    margin-top: 25px;
     text-align: center;
     margin-bottom: 10%;
 }
+
+#traa:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+#resort:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+#favourite:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+#mixtape:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+#thermosecurity:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+.see-more img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+
 
 
 //CONTACT FORM
@@ -320,6 +372,14 @@
     margin-top: 3%;
 }
 
+#submit-button:hover {
+    background-color: white;
+    color: $light_green;
+    transition: all 0.15s;
+    transform: scale(1.1);
+    transition-timing-function: ease-in;
+}
+
 //FOOTER
 #footer {
     background-color: $light_gray;
@@ -338,6 +398,12 @@
     padding: 0.8em;
     cursor: pointer;
     margin-top: 2em;
+}
+
+#footer-social-media img:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.664));
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 #footer-logo {
@@ -383,17 +449,17 @@
     color: $dark_green;
     font-weight: 800;
     margin-left: 5%;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .popover-roll {
-    font-family: $text_font !important;
-    color: $light_green !important;
-    font-weight: 100 !important;
-    margin-left: 5% !important;
-    font-size: 2em !important;
-    text-align: left !important;
-    margin-bottom: 3% !important;
+    font-family: $text_font;
+    color: $light_green;
+    font-weight: 100;
+    margin-left: 5%;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 3%;
 }
 
 .popover-description {
@@ -401,8 +467,9 @@
     font-weight: 400;
     color: $dark_green;
     margin-left: 5%;
-    width: 60%;
+    width: 90%;
     line-height: 1.3em;
+    font-size: 0.9em;
 }
 
 
@@ -411,7 +478,7 @@
 // p > span { display: block; padding-bottom: 12px; }
 
 .popover { 
-    width: 70%;
+    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -424,8 +491,6 @@
   
   .show-popover { 
       display: block !important; 
-      margin-left: auto !important;
-      margin-right: auto !important;
 }
 
 .close-popover {
@@ -439,13 +504,13 @@
 }
 
 .popover img {
-    width: 60% !important;
+    width: 90%;
     height: auto;
     margin-bottom: 5%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 15%;
 }
   
 
@@ -461,6 +526,7 @@
 
     #hero-text {
         font-size: 8em;
+        margin-top: 15%;
     }
 
     .number {
@@ -509,6 +575,7 @@
         width: 6em;
     }
 
+
     .horizontal-logos {
         width: 15em !important;
     }
@@ -519,6 +586,10 @@
 
     #proj-container h2 {
         font-size: 2.5em;
+    }
+
+    .popover-description {
+        font-size: 1em;
     }
 
     .skill-title h1 {
@@ -549,6 +620,32 @@
     }
   }
 
+  //media query 800px 
+@media screen and (min-width: 50em) {
+    .popover {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .popover-title {
+        font-size: 2em;
+    }
+
+    .popover-roll {
+        font-size: 2.5em;
+    }
+
+    .popover-description {
+        width: 60%;
+        margin-top: 5%;
+        font-size: 1em;
+    }
+
+    .popover img {
+        width: 90%;
+    }
+}
+
   //media query 1024px ---DESKTOP---
 @media screen and (min-width: 64em) {
     #white-logo {
@@ -575,6 +672,10 @@
 
     .section-description, .section-description2 {
         width: 39%;
+    }
+
+    .section-description2 {
+        width: 23em !important;
     }
 
     .section-description, .section-description2 {
