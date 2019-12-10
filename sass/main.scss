@@ -70,6 +70,7 @@
 
 .title {
     font-family: $main_font;
+    font-weight: 700;
     color: $light_green;
     font-size: 0.5em;
     margin-top: 0;
@@ -129,6 +130,7 @@
 
 .title2 {
     font-family: $main_font;
+    font-weight: 700;
     color: $dark_green;
     font-size: 0.5em;
     margin-top: 0;
@@ -186,8 +188,13 @@
     margin-bottom: 10%;
 }
 
-#design-logos img, #code-logos img, #other-logos img {
+#design-logos img, #code-logos img {
     width: 5em;
+    padding: 1em;
+}
+
+#other-logos img {
+    width: 8em;
     padding: 1em;
 }
 
@@ -578,8 +585,9 @@
 
 
     .horizontal-logos {
-        width: 15em !important;
+        width: 12em !important;
     }
+
 
     #proj-container img {
         width: 30em;
