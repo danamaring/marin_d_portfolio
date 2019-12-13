@@ -723,6 +723,7 @@
 
     #proj-container img {
         width: 20em;
+        padding: 5%;
     }
 
     #proj-container {
@@ -730,6 +731,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        width: 80%;
+        margin-left: 10%;
     }
 
     .popover-description {
