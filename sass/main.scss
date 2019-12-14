@@ -80,7 +80,7 @@
 
 .deco-line-title {
     width: 4.3em;
-    height: 0.3em;
+    height: 0.45em;
     background-color: $light_green;
     margin-left: 43%;
     margin-top: 4px;
@@ -103,7 +103,7 @@
 #video {
     max-width: 100%;
     height: auto;
-    margin-top: -10%;
+    margin-top: 0%;
 }
 
 // MY SKILLS
@@ -115,6 +115,7 @@
     background-position: center center;
     max-width: 100%;
     height: auto;
+    margin-bottom: 10%;
 }
 
 .number2 {
@@ -140,7 +141,7 @@
 
 .deco-line-title2 {
     width: 4.3em;
-    height: 0.3em;
+    height: 0.45em;
     background-color: $dark_green;
     margin-left: 43%;
     margin-top: 4px;
@@ -419,7 +420,7 @@
 }
 
 #footer-logo {
-    width: 4em;
+    width: 5.5em;
     position: relative;
     display: block;
     margin-left: auto;
@@ -558,7 +559,9 @@
 
     .deco-line-title {
         width: 8.4em;
+        height: 0.7em;
     }
+    
 
     .number2 {
         font-size: 15em;
@@ -576,6 +579,7 @@
 
     .deco-line-title2 {
         width: 8.4em;
+        height: 0.7em;
     }
 
     .skill-title {
@@ -846,7 +850,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        margin-top: 0%;
     }
 }
 
